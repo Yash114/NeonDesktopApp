@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+  }
+.slideshow-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides {
+
+    position: fixed;
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    left: 0%;
+    right: 0%;
+    top: 30%;
+
+    text-align: center;
+
+}
+
+.button {
+    cursor: pointer;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: 0.6 ease;
+    user-select: none;
+
+    border-radius: 999px;
+    font-family: 'DM-Mono';
+}
+
+.disabled_button {
+    cursor: pointer;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: 0.6 ease;
+    user-select: none;
+
+    border-radius: 999px;
+    font-family: 'DM-Mono';
+}
+
+#connect {
+    background-color: #2BFF00;
+    color: black;
+}
+
+#prev {
+    position: fixed;
+    bottom: 8px;
+
+    left: 8px;
+    color: #717171;
+}
+
+#next {
+    position: fixed;
+    bottom: 8px;
+
+    right: 8px;
+    background-color: #2BFF00;
+    color: black;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.7;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid white;
+
+    transition: background-color 0.6s ease;
+    transition: border-color 0.6s ease;
+
+
+
+}
+
+.active, .dot:hover {
+    border: 1px solid #2BFF00;
+    background-color: #2BFF00;
+
+
+}
+
+
+.slide {
+    width: 100%;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

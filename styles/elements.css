@@ -1,0 +1,17 @@
+a {
+    color: white;
+    margin: 8px;
+
+    font-size: 12px;
+    align-items: center;
+    align-content: center;
+
+    text-decoration: none;
+}
+
+#helpIcon {
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 16px;
+}

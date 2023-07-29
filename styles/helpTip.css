@@ -1,0 +1,29 @@
+/* Add styles for the floating message container */
+#floatingMessage {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+}
+
+/* Add animation for the floating message */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+/* Add a class to show the floating message */
+.show {
+    animation: fadeInOut 3s ease;
+}

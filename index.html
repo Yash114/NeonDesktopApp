@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles/elements.css">
+  <link rel="stylesheet" href="styles/helpTip.css">
+  <link rel="stylesheet" href="styles/layouts.css">
+  <link rel="stylesheet" href="styles/start-slideshow.css">
+
+
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://localhost:47990 'unsafe-inline' https://api.ipify.org; script-src 'self' https://localhost:47990 'unsafe-inline' https://api.ipify.org";>
+  <title>Neon Controller</title>
+</head>
+
+<body onload="VerifySunshineConnection()">
+
+  <div id="floatingMessage" class="hidden">This is message!</div>
+
+  <div class="topBar"></div>
+
+  <div class="content">
+
+    <div class="slideshow-container" style="max-width: 500px;">
+
+      <!-- Slide #1 -->
+      <div class="mySlides">
+
+        <img id="logoImage" src="./assets/neon-logo.png">
+        <h1 style="text-align: center;">Welcome to NEON!</h1>
+        <p style="text-align: center;">Play your PC game library on your<br>mobile device with customizable controls!</p>
+
+      </div>
+
+      <!-- Slide #2 -->
+      <div class="mySlides fade">
+
+        <div style="text-align: center; position: fixed; width: 100%; top:30px;">
+          <h1>Connect PC</h1>
+          <p>Setup your connection with your mobile<br>device.</p>
+        </div>
+
+        <div style="width:100%; position: fixed; top: 40%; transform: translate(0%, -50%); display: flex;">
+
+            <span style="width:fit-content; left: 5%; position: fixed;">
+              <h4 style="width: 100%; text-align: left; margin-bottom: 8px; align-content: start;">1. Download NEON Mobile App</h3>
+              <a href="https://play.google.com/store/apps/details?id=com.gingertech.starbeam" style="left:0">
+                <img src="./assets/download-app-button.png" style="width:200px; transform: translate(7px, 0px);" >
+              </a>
+
+            </span>
+
+            <span style="width:fit-content; position: fixed; left: 50%; transform: translate(-50%, 0%);">
+              <h4 style="width: 100%; margin-bottom: 8px;">2. Open app and select your PC</h3>
+                <span>
+                  <p style="width: 100%; transform: translate(17px, 0px); text-align: left;">PC name:</p>
+                  <p id="computer_display" style="width: 90%; color:#2BFF00;  transform: translate(17px, 0px); text-align: left;">~</p>
+                </span>
+
+                <br>
+
+                <span>
+                  <p style="width: 100%; transform: translate(17px, 0px); text-align: left;">PC IP Address:</p>
+                  <p id="ip_display" style="width: 90%; color:#2BFF00;  transform: translate(17px, 0px); text-align: left;">Fetching IP Address...</p>
+                </span>
+            </span>
+
+            <span style="width:fit-content; right: 5%; position: fixed;">
+              <h4 style="width: 100%; text-align: left; margin-bottom: 8px;">3. Connect with PIN</h3>
+                <span>
+                  <p style="width: 100%; text-align: left; margin-bottom: 8px; transform: translate(17px, 0px); ">Enter the 4-digit PIN shown<br>on mobile</p>
+
+                  <input type="number" placeholder="Ex: 9272" id="pinInput" style="text-align: center; transform: translate(17px, 0px); margin-bottom: 8px; margin-right: 16px; width: 90%;"/>
+
+                  <a class="button" id="connect" style="width: fit-content; position: absolute; right:16px; bottom: 0; transform: translate(37px, 45px)">CONNECT</a>
+
+                </span>
+
+
+            </span>
+
+        </div>
+
+      </div>
+
+      <!-- Slide #3 -->
+      <div class="mySlides fade">
+        <div style="top:50%; transform: translateY(-25%);">
+          <a class="checkmark">&#10004;</a>
+          <h1>Connected</h1>
+          <p>You have successfully connected to your PC.<br>You are now ready to play.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <br>
+
+    <div style="position:fixed; text-align: center; bottom:35px; width:100%; margin-bottom: 16px;">
+      <a id="prev" class="button" onclick="decrementSide()" style="bottom:40px">&#10094; BACK</a>
+  
+      <span class="dot" onclick="currentSlides(1)"></span>
+      <span class="dot" onclick="currentSlides(2)"></span>
+      <span class="dot" onclick="currentSlides(3)"></span>
+  
+      <a id="next" class="button" onclick="incrementSide()" style="bottom:40px">CONNECT PC &#10095;</a>
+    </div>
+
+  </div>
+
+  <div class="sticky-footer">
+    <a href="neoncontroller.app">Neon Controller</a>
+    <a href="https://github.com/LizardByte/Sunshine">Powered By Sunshine</a>
+  </div>
+
+  <div id="particles-js" class="background"></div>
+</body>
+
+<script src="./renderer.js"></script>
+<script src="./particles.js"></script>
+<script src="./background-animation.js"></script>
+<script src="./sunshine-stuff.js"></script>
+
+
+</html>

@@ -1,0 +1,177 @@
+.topBar {
+  -webkit-app-region: drag;
+  width: 100%;
+  height: 25px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 0;
+  margin-top: 0;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../assets/Oswald-VariableFont_wght.ttf');
+}
+
+
+
+@font-face {
+  font-family: 'DM-Mono';
+  src: url('../assets/DMMono-Regular.ttf');
+}
+
+p {
+  font-family: "DM-Mono";
+  color: #777777;
+  font-size: small;
+}
+
+h1 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 38px;
+}
+
+h3 {
+  font-family: "Oswald";
+  color: white;
+}
+
+h4 {
+  font-family: "Oswald";
+  color: #ccc;
+}
+
+#logoImage {
+  height: 60px;
+  width: 60px;
+  color: #2bff00;
+}
+
+.background{
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.content{
+  color: #FFFFFF;
+  height: 90vh;
+  width: 100%;
+  z-index: 1;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.pinDiv {
+  display: flex;
+  align-items: center;
+  padding: 3px; 
+}
+
+#particles-js {
+  position : absolute;
+  width:100%;
+  height:99%;
+  z-index:-1;
+}
+
+input { border-style: none; font-size: x-large; background: #333333; outline: none; padding: 4px; color: white; font-family: "Oswald"; -webkit-appearance: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes gradient { 
+  0%{background-position:0 0}
+  100%{background-position:100% 0}
+}
+
+#pinInputWrap {
+  background: #2bff00;
+  border: 0px solid black; border-radius: 12px; overflow: hidden;
+  margin-bottom: 16px;
+  padding: 2px;
+  background-position: 0% 0%;
+
+}
+
+#pinSubmitWrap {
+  background: #2bff00;
+  border: 0px solid black; border-radius: 12px; overflow: hidden;
+  margin-bottom: 16px;
+  padding: 2px;
+}
+
+
+.userInput {
+  height: 50px;
+  width: 500px;
+  align-items: center;
+  background-color: #111111;
+  border: 0px solid black; border-radius: 10px; overflow: hidden;
+  font-family: BebasNeue;
+  font-size: x-large;
+  text-align: center;  
+}
+
+#pinSubmit {
+  background-color: #2bff00;
+  border: 0px solid black; border-radius: 10px; overflow: hidden;
+  font-family: BebasNeue;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  align-items: center;
+}
+
+.sticky-footer {
+  /* Stick the footer to the bottom */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #111111;
+  padding: 8px;
+  justify-content: space-between;
+
+  /* Add any other styles for your footer here */
+}
+
+.checkmark {
+  color: #2bff00;
+  
+  background: #0baa00;
+  border-radius: 999px;
+  padding: 50px;
+  text-align: center; /* Center the text inside the square */
+  line-height: 132px; /* Vertically center the text inside the square */
+
+  display: inline-block; /* Ensures the link takes up only the necessary width */
+
+
+  height: 132px;
+  width: 132px;
+  font-size: 132px;
+}

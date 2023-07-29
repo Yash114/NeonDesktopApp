@@ -1,0 +1,34 @@
+
+{
+  "name": "Neon",
+  "version": "0.0.1",
+  "license": "GPLv3",
+  "description": "This is the server counterpart for the Neon mobile App",
+  "author": "Yashua Evans <yashua@neoncontroller.app>",
+  "main": "./index.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gingertech.neon",
+    "win": {
+      "target": "NSIS",
+      "icon": "./build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": "false",
+      "createDesktopShortcut": "always",
+      "allowToChangeInstallationDirectory": "true",
+      "displayLanguageSelector": "true"
+    },
+    "extraResources": ["./extraResources"]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+}
