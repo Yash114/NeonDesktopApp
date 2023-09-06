@@ -31,7 +31,6 @@
         <img id="logoImage" src="./assets/neon-logo.png">
         <h1 style="text-align: center;">Welcome to NEON!</h1>
         <p style="text-align: center;">Play your PC game library on your<br>mobile device with customizable controls!</p>
-
       </div>
 
       <!-- Slide #2 -->
@@ -39,7 +38,12 @@
 
         <div style="text-align: center; position: fixed; width: 100%; top:30px;">
           <h1>Connect PC</h1>
-          <p>Setup your connection with your mobile<br>device.</p>
+          <p>Setup your connection with your mobile device.</p>
+
+          <br>
+
+          <p style="text-align: center;">If you have sunshine running please close as it causes conflicts with neon</p>
+
         </div>
 
         <div style="width:100%; position: fixed; top: 40%; transform: translate(0%, -50%); display: flex;">
@@ -49,22 +53,23 @@
               <a href="https://play.google.com/store/apps/details?id=com.gingertech.starbeam" style="left:0">
                 <img src="./assets/download-app-button.png" style="width:200px; transform: translate(7px, 0px);" >
               </a>
+              <p style="width: 100%; text-align: left; margin-bottom: 8px; transform: translate(14px, 0px); ">Set both devices to<br>the same wifi network</p>
 
             </span>
 
             <span style="width:fit-content; position: fixed; left: 50%; transform: translate(-50%, 0%);">
-              <h4 style="width: 100%; margin-bottom: 8px;">2. Open app and select your PC</h3>
+              <h4 style="width: 100%; margin-bottom: 8px;">2. Click Play and select your PC</h3>
+
                 <span>
-                  <p style="width: 100%; transform: translate(17px, 0px); text-align: left;">PC name:</p>
-                  <p id="computer_display" style="width: 90%; color:#2BFF00;  transform: translate(17px, 0px); text-align: left;">~</p>
+                  <img src="./assets/locked_computer_icon.png" style="width:100px; margin-bottom: 8px;" >
                 </span>
 
                 <br>
 
                 <span>
-                  <p style="width: 100%; transform: translate(17px, 0px); text-align: left;">PC IP Address:</p>
-                  <p id="ip_display" style="width: 90%; color:#2BFF00;  transform: translate(17px, 0px); text-align: left;">Fetching IP Address...</p>
+                  <p id="computer_display" style="width: 100%; text-align: center;">~</p>
                 </span>
+
             </span>
 
             <span style="width:fit-content; right: 5%; position: fixed;">
@@ -96,7 +101,7 @@
 
 
     </div>
-
+ 
     <br>
 
     <div style="position:fixed; text-align: center; bottom:35px; width:100%; margin-bottom: 16px;">
@@ -112,7 +117,7 @@
   </div>
 
   <div class="sticky-footer">
-    <a href="neoncontroller.app">Neon Controller</a>
+    <a href="neoncontroller.app">Neon Controller v1.0.1</a>
     <a href="https://github.com/LizardByte/Sunshine">Powered By Sunshine</a>
   </div>
 

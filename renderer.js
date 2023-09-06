@@ -14,7 +14,7 @@ const computerField = document.getElementById("computer_display");
 
 let connect_to_mobile = false
 
-const nextButtonMessages = ["CONNECT PC " + String.fromCharCode(10095), "PLAY GAMES " + String.fromCharCode(10095)]
+const nextButtonMessages = ["CONNECT PC " + String.fromCharCode(10095), "DONE " + String.fromCharCode(10095)]
 
 button.addEventListener("click", Connect);
 

@@ -1,7 +1,7 @@
 
 {
   "name": "Neon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "GPLv3",
   "description": "This is the server counterpart for the Neon mobile App",
   "author": "Yashua Evans <yashua@neoncontroller.app>",
