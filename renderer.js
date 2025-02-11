@@ -1,3 +1,4 @@
+const { ipcMain } = require('electron');
 const os = require('os')
 
 var SunshineStatus = false;
@@ -14,10 +15,9 @@ const computerField = document.getElementById("computer_display");
 
 let connect_to_mobile = false
 
-const nextButtonMessages = ["CONNECT PC " + String.fromCharCode(10095), "DONE " + String.fromCharCode(10095)]
+const nextButtonMessages = ["Start Host " + String.fromCharCode(10095), "Done " + String.fromCharCode(10095)]
 
 button.addEventListener("click", Connect);
-
 
 function showFloatingMessage(text) {
     floatingMessage.textContent = text;
@@ -28,35 +28,47 @@ function showFloatingMessage(text) {
 }
 
 
-
 function VerifySunshineConnection() {
-
-    //Gets the computer IP
-    fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => IPField.textContent = data.ip);
-
-    //Gets the computer name
-    computerField.textContent = os.hostname();
-
 
     Verify_Connection()
         .then(response => {
-            if(!response.ok) {
+
+            if(response.ok) {
+                showFloatingMessage("Neon or Sunshine Host Already Found");
+            } else  {
+                showFloatingMessage("Starting Neon Host...");
+
                 Start_Sunshine()
-                    .on('error', (error) => {
-                        showFloatingMessage("Unable to start server");
-                    });
+                .then(response => {
+                    showFloatingMessage(response);
+                },  response => {
+                    showFloatingMessage(response);
+                })
             }
+
         })
         .catch(err => {
+            showFloatingMessage("Starting Neon Host...");
+
+            console.log(err);              
+
             Start_Sunshine()
-                .on('error', (error) => {
-                    showFloatingMessage("Unable to start server");
-                });
+                .then(response => {
+                    showFloatingMessage(response);
+                },  response => {
+                    showFloatingMessage(response);
+                })
         })
 
-    }
+    //Gets the computer IP
+    fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => IPField.textContent = "IP Address: " + data.ip);
+
+    //Gets the computer name
+    computerField.textContent = "PC Name: " + os.hostname();
+
+}
 
 
 
@@ -92,13 +104,19 @@ showSlides(slideIndex);
 
 function incrementSide(){
 
-    if(slideIndex == 1 && !connect_to_mobile) {
-        showFloatingMessage("Please connect to your mobile device first");
-    } else {
-        slideIndex += 1
-        showSlides(slideIndex)
+    
+    if(slideIndex == 0 && !connect_to_mobile) {
+        VerifySunshineConnection();
     }
 
+    if(slideIndex == 1) {
+        if(!connect_to_mobile) {
+            showFloatingMessage("Please connect to your mobile device first");
+        }
+    }
+
+    slideIndex += 1
+    showSlides(slideIndex)
 
 }
 
@@ -139,3 +157,29 @@ function showSlides(n) {
     slides[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
 }
+
+const path = require('path');
+
+const script_path = "./resources/extraResources/Sunshine/scripts";
+// const script_path = "./extraResources/Sunshine/scripts";
+
+function installVigembus() {
+
+    childProcess = spawn("install-vigembus.bat", [], {
+        detached: true,
+        stdio: 'ignore', // Use 'ignore' to keep the .exe file open in the background
+        cwd: script_path,
+    });
+}
+
+const { ipcRenderer } = require('electron');
+
+ipcRenderer.on('message', (event, arg) => {
+    console.log('Renderer Process received a response:', arg);
+    // Handle the response
+  });
+
+
+  ipcRenderer.on('version', (event, arg) => {
+    document.getElementById("version").textContent = "Neon Controller" + arg;
+  }); 

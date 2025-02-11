@@ -141,6 +141,14 @@ input[type=number] {
   cursor: pointer;
 }
 
+#downloadVigembus {
+  background-color: #2bff00;
+  border: 0px solid black; border-radius: 10px; overflow: hidden;
+  font-family: BebasNeue;
+  font-size: medium;
+  cursor: pointer;
+}
+
 .container {
   position: relative;
   align-items: center;

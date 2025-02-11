@@ -15,7 +15,7 @@
   <title>Neon Controller</title>
 </head>
 
-<body onload="VerifySunshineConnection()">
+<body>
 
   <div id="floatingMessage" class="hidden">This is message!</div>
 
@@ -29,8 +29,8 @@
       <div class="mySlides">
 
         <img id="logoImage" src="./assets/neon-logo.png">
-        <h1 style="text-align: center;">Welcome to NEON!</h1>
-        <p style="text-align: center;">Play your PC game library on your<br>mobile device with customizable controls!</p>
+        <h1 style="text-align: center;">Neon Controller</h1>
+        <p style="text-align: center;">Create Your Next Level Controller!</p>
       </div>
 
       <!-- Slide #2 -->
@@ -38,18 +38,13 @@
 
         <div style="text-align: center; position: fixed; width: 100%; top:30px;">
           <h1>Connect PC</h1>
-          <p>Setup your connection with your mobile device.</p>
-
-          <br>
-
-          <p style="text-align: center;">If you have sunshine running please close as it causes conflicts with neon</p>
-
+          <p>Connect your mobile device to your PC.</p>
         </div>
 
         <div style="width:100%; position: fixed; top: 40%; transform: translate(0%, -50%); display: flex;">
 
             <span style="width:fit-content; left: 5%; position: fixed;">
-              <h4 style="width: 100%; text-align: left; margin-bottom: 8px; align-content: start;">1. Download NEON Mobile App</h3>
+              <h4 style="width: 100%; text-align: left; margin-bottom: 8px; align-content: start;">1. Download NEON mobile app</h3>
               <a href="https://play.google.com/store/apps/details?id=com.gingertech.starbeam" style="left:0">
                 <img src="./assets/download-app-button.png" style="width:200px; transform: translate(7px, 0px);" >
               </a>
@@ -65,9 +60,11 @@
                 </span>
 
                 <br>
-
                 <span>
                   <p id="computer_display" style="width: 100%; text-align: center;">~</p>
+
+                  <p id="ip_display" style="width: 100%; text-align: center;">~</p>
+
                 </span>
 
             </span>
@@ -79,26 +76,34 @@
 
                   <input type="number" placeholder="Ex: 9272" id="pinInput" style="text-align: center; transform: translate(17px, 0px); margin-bottom: 8px; margin-right: 16px; width: 90%;"/>
 
-                  <a class="button" id="connect" style="width: fit-content; position: absolute; right:16px; bottom: 0; transform: translate(37px, 45px)">CONNECT</a>
+                  <a class="button" id="connect" style="width: fit-content; position: absolute; right:16px; bottom: 0; transform: translate(37px, 45px)">Connect</a>
 
                 </span>
 
 
             </span>
-
+            
         </div>
 
       </div>
 
       <!-- Slide #3 -->
       <div class="mySlides fade">
-        <div style="top:50%; transform: translateY(-25%);">
+        <div style="top:50%; transform: translate(100%, -25%); width: 50%">
           <a class="checkmark">&#10004;</a>
           <h1>Connected</h1>
           <p>You have successfully connected to your PC.<br>You are now ready to play.</p>
         </div>
-      </div>
 
+        <div style=" width: 50%; height: 100%; top: 50%; transform: translateY(-50%)">
+          <h3>For XBOX control please download ViGEmBus</h3>
+          <p>Restart your computer after installing</p>
+          <p style="height: 20px;"></p>
+          <a class="button" id="downloadVigembus" style="color: black" onclick="installVigembus()">Install Vigembus</a>
+
+        </div>
+
+      </div>
 
     </div>
  
@@ -111,13 +116,13 @@
       <span class="dot" onclick="currentSlides(2)"></span>
       <span class="dot" onclick="currentSlides(3)"></span>
   
-      <a id="next" class="button" onclick="incrementSide()" style="bottom:40px">CONNECT PC &#10095;</a>
+      <a id="next" class="button" onclick="incrementSide()" style="bottom:40px">Begin Hosting &#10095;</a>
     </div>
 
   </div>
 
   <div class="sticky-footer">
-    <a href="neoncontroller.app">Neon Controller v1.0.1</a>
+    <a id="version" href="neoncontroller.app">Neon Controller v1.0.9</a>
     <a href="https://github.com/LizardByte/Sunshine">Powered By Sunshine</a>
   </div>
 

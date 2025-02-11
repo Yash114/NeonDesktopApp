@@ -1,19 +1,26 @@
-
 {
   "name": "Neon",
-  "version": "0.0.2",
+  "version": "1.0.9",
   "license": "GPLv3",
-  "description": "This is the server counterpart for the Neon mobile App",
-  "author": "Yashua Evans <yashua@neoncontroller.app>",
+  "description": "This is the host for the Neon Controller mobile app",
+  "author": "Gingertech Inc. <support@neoncontroller.app>",
   "main": "./index.js",
   "scripts": {
     "postinstall": "install-app-deps",
-    "start": "npm install && electron .",
+    "start": "electron-forge start",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": "https://github.com/Yash114/NeonDesktopApp",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
   },
   "build": {
     "appId": "com.gingertech.neon",
+    "productName": "Neon Controller",
     "win": {
       "target": "NSIS",
       "icon": "./build/icon.ico"
@@ -22,13 +29,25 @@
       "oneClick": "false",
       "createDesktopShortcut": "always",
       "allowToChangeInstallationDirectory": "true",
-      "displayLanguageSelector": "true"
+      "displayLanguageSelector": "true",
+      "include": "build/install.nsh"
     },
-    "extraResources": ["./extraResources"]
+    "extraResources": [
+      "./extraResources"
+    ]
   },
-  "dependencies": {},
   "devDependencies": {
-    "electron": "latest",
-    "electron-builder": "latest"
+    "@electron-forge/cli": "^6.4.1",
+    "@electron-forge/maker-deb": "^6.4.1",
+    "@electron-forge/maker-rpm": "^6.4.1",
+    "@electron-forge/maker-squirrel": "^6.4.1",
+    "@electron-forge/maker-zip": "^6.4.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
+    "electron": "^26.2.3",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "electron-updater": "^6.1.4"
   }
 }

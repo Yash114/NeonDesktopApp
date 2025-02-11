@@ -1,2 +1,5 @@
 node_modules/**
 dist/**
+out/
+cred/
+env_vars.env

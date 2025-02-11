@@ -1,0 +1,322 @@
+[2023:12:08:06:10:39]: Info: Sunshine version: 0.20.0.dirty
+[2023:12:08:06:10:39]: Info: Compiling shaders...
+[2023:12:08:06:10:39]: Info: System tray created
+[2023:12:08:06:10:39]: Info: Compiled shaders
+[2023:12:08:06:10:40]: Info: Successfully reset default audio device
+[2023:12:08:06:10:40]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2023:12:08:06:10:40]: Info: Trying encoder [nvenc]
+[2023:12:08:06:10:40]: Info: ddprobe.exe [1] [] returned: 0x00000000
+[2023:12:08:06:10:40]: Info: Set GPU preference: 1
+[2023:12:08:06:10:41]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:10:41]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:10:41]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:10:41]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:10:41]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:10:41]: Info: Color range: [JPEG]
+[2023:12:08:06:10:41]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:10:41]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:10:41]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:10:41]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:10:41]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:10:41]: Info: Color range: [JPEG]
+[2023:12:08:06:10:42]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:10:42]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:10:42]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:10:42]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:10:42]: Info: SDR color coding [Rec. 709]
+[2023:12:08:06:10:42]: Info: Color range: [JPEG]
+[2023:12:08:06:10:42]: Info: 
+[2023:12:08:06:10:42]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2023:12:08:06:10:42]: Info: 
+[2023:12:08:06:10:42]: Info: Found encoder nvenc: [h264_nvenc, hevc_nvenc]
+[2023:12:08:06:10:42]: Info: Open the Web UI to set your new username and password and getting started
+[2023:12:08:06:10:42]: Info: Configuration UI available at [https://localhost:47990]
+[2023:12:08:06:10:43]: Info: Registered Sunshine mDNS service
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Error: UPNP_GetSpecificPortMappingEntry() failed: -1
+[2023:12:08:06:10:46]: Info: Completed UPnP port mappings to 192.168.1.36 via http://192.168.1.1:56688/Public_UPNP_gatedesc.xml
+[2023:12:08:06:11:14]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2023:12:08:06:11:14]: Info: Trying encoder [nvenc]
+[2023:12:08:06:11:14]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:14]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:14]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:14]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:14]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:11:14]: Info: Color range: [JPEG]
+[2023:12:08:06:11:14]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:14]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:14]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:14]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:14]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:11:14]: Info: Color range: [JPEG]
+[2023:12:08:06:11:15]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:15]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:15]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:15]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:15]: Info: SDR color coding [Rec. 709]
+[2023:12:08:06:11:15]: Info: Color range: [JPEG]
+[2023:12:08:06:11:15]: Info: 
+[2023:12:08:06:11:15]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2023:12:08:06:11:15]: Info: 
+[2023:12:08:06:11:15]: Info: Found encoder nvenc: [h264_nvenc, hevc_nvenc]
+[2023:12:08:06:11:15]: Info: Executing [Desktop]
+[2023:12:08:06:11:15]: Info: WLAN interface 0 is now in low latency mode
+[2023:12:08:06:11:15]: Info: CLIENT CONNECTED
+[2023:12:08:06:11:15]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:15]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:15]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:15]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:15]: Info: Capture format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:16]: Info: SDR color coding [Rec. 709]
+[2023:12:08:06:11:16]: Info: Color range: [MPEG]
+[2023:12:08:06:11:23]: Info: CLIENT DISCONNECTED
+[2023:12:08:06:11:35]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2023:12:08:06:11:35]: Info: Trying encoder [nvenc]
+[2023:12:08:06:11:35]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:35]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:35]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:35]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:35]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:11:35]: Info: Color range: [JPEG]
+[2023:12:08:06:11:36]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:36]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:36]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:36]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:36]: Info: SDR color coding [Rec. 601]
+[2023:12:08:06:11:36]: Info: Color range: [JPEG]
+[2023:12:08:06:11:37]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:37]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:37]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:37]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:37]: Info: SDR color coding [Rec. 709]
+[2023:12:08:06:11:37]: Info: Color range: [JPEG]
+[2023:12:08:06:11:37]: Info: 
+[2023:12:08:06:11:37]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2023:12:08:06:11:37]: Info: 
+[2023:12:08:06:11:37]: Info: Found encoder nvenc: [h264_nvenc, hevc_nvenc]
+[2023:12:08:06:11:37]: Info: WLAN interface 0 is now in low latency mode
+[2023:12:08:06:11:37]: Info: CLIENT CONNECTED
+[2023:12:08:06:11:37]: Info: 
+Device Description : NVIDIA GeForce RTX 4070 Ti
+Device Vendor ID   : 0x000010DE
+Device Device ID   : 0x00002782
+Device Video Mem   : 12010 MiB
+Device Sys Mem     : 0 MiB
+Share Sys Mem      : 32627 MiB
+Feature Level      : 0x0000B100
+Capture size       : 3840x2160
+Offset             : 0x0
+Virtual Desktop    : 3840x2160
+[2023:12:08:06:11:37]: Info: Desktop resolution [3840x2160]
+[2023:12:08:06:11:37]: Info: Desktop format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:37]: Info: 
+Colorspace         : DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
+Bits Per Color     : 8
+Red Primary        : [0.68457,0.30957]
+Green Primary      : [0.259766,0.68457]
+Blue Primary       : [0.150391,0.0595703]
+White Point        : [0.313477,0.329102]
+Min Luminance      : 0 nits
+Max Luminance      : 400 nits
+Max Full Luminance : 282.855 nits
+[2023:12:08:06:11:37]: Info: Capture format [DXGI_FORMAT_B8G8R8A8_UNORM]
+[2023:12:08:06:11:37]: Info: SDR color coding [Rec. 709]
+[2023:12:08:06:11:37]: Info: Color range: [MPEG]
+[2023:12:08:06:15:34]: Info: CLIENT DISCONNECTED
+[2023:12:08:06:48:10]: Info: Interrupt handler called
+[2023:12:08:06:48:10]: Info: Unmapping UPNP ports...
+[2023:12:08:06:48:10]: Info: Unregistered Sunshine mDNS service

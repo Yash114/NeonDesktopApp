@@ -4,10 +4,16 @@ const path = require('path')
 
 const { execFile } = require('child_process');
 
+const { autoUpdater, AppUpdater } = require("electron-updater")
+
+let mainWindow;
+
+autoUpdater.autoDownload = true;
+autoUpdater.autoInstallOnAppQuit = true;
 
 function createWindow () {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 1000,
     height: 600,
     autoHideMenuBar: true,
@@ -51,7 +57,14 @@ app.whenReady().then(() => {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
-  })
+    // mainWindow.webContents.send("version",  app.getVersion);
+// 
+  });
+
+  autoUpdater.checkForUpdatesAndNotify()
+  console.log("Checking for updates")
+  // autoUpdater.checkForUpdates()
+
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
@@ -80,5 +93,28 @@ ipcMain.on('execute-exe', (event, exePath) => {
     // Send the result back to the renderer process
     event.reply('execute-exe-response', { stdout, stderr });
   });
+});
+
+
+// Handle update events
+autoUpdater.on('update-available', (info) => {
+  console.log("")
+  mainWindow.webContents.send("message", "There is an update available");
+
+
+});
+
+autoUpdater.on('update-downloaded', (info) => {
+  mainWindow.webContents.send("message", "Download update");
+
+});
+
+autoUpdater.on('update-not-available', (info) => {
+  mainWindow.webContents.send("message", "There is no update available");
+
+});
+
+autoUpdater.on('error', (info) => {
+  console.log(info)
 });
 
